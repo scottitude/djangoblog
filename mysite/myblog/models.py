@@ -3,6 +3,7 @@
 # Dev:   Scott Luse
 # Changelog:
 # Aug 11, 2018: Django REST framework
+# Aug 12, 2018: Updated REST with Post and Category
 #-------------------------------------------------#
 
 from django.db import models
