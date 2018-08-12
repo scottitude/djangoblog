@@ -4,6 +4,7 @@ from .views import list_view, detail_view
 from django.conf.urls import url, include
 from rest_framework import routers
 from myblog import views
+from myblog.feeds import LatestPostsFeed
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
@@ -17,6 +18,6 @@ urlpatterns = [
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
     url(r'^', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
-
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^feeds/$', LatestPostsFeed(), name='feeds'),
 ]

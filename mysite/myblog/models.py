@@ -1,5 +1,5 @@
 #-------------------------------------------------#
-# Title: admin.py
+# Title: models.py
 # Dev:   Scott Luse
 # Changelog:
 # Aug 11, 2018: Django REST framework
