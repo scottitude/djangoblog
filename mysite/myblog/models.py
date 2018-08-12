@@ -1,8 +1,8 @@
 #-------------------------------------------------#
 # Title: admin.py
 # Dev:   Scott Luse
-# Date:  Aug 04, 2018
-# Change so that you can only add categories to posts
+# Changelog:
+# Aug 11, 2018: Django REST framework
 #-------------------------------------------------#
 
 from django.db import models
